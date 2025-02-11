@@ -1,0 +1,54 @@
+2025-02-10T13:19:23,842 Using pip 25.0.1 from C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip (python 3.13)
+2025-02-10T13:19:23,843 Non-user install because user site-packages disabled
+2025-02-10T13:19:24,531 Created temporary directory: C:\Users\USER\AppData\Local\Temp\pip-build-tracker-vsyokwen
+2025-02-10T13:19:24,531 Initialized build tracking at C:\Users\USER\AppData\Local\Temp\pip-build-tracker-vsyokwen
+2025-02-10T13:19:24,531 Created build tracker: C:\Users\USER\AppData\Local\Temp\pip-build-tracker-vsyokwen
+2025-02-10T13:19:24,531 Entered build tracker: C:\Users\USER\AppData\Local\Temp\pip-build-tracker-vsyokwen
+2025-02-10T13:19:24,532 Created temporary directory: C:\Users\USER\AppData\Local\Temp\pip-install-mssc35hu
+2025-02-10T13:19:25,108 Remote version of pip: 25.0.1
+2025-02-10T13:19:25,108 Local version of pip:  25.0.1
+2025-02-10T13:19:25,113 Was pip installed by pip? True
+2025-02-10T13:19:25,114 ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+2025-02-10T13:19:25,115 Exception information:
+2025-02-10T13:19:25,115 Traceback (most recent call last):
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 587, in get_file_content
+2025-02-10T13:19:25,115     with open(url, "rb") as f:
+2025-02-10T13:19:25,115          ~~~~^^^^^^^^^^^
+2025-02-10T13:19:25,115 FileNotFoundError: [Errno 2] No such file or directory: 'requirements.txt'
+2025-02-10T13:19:25,115 
+2025-02-10T13:19:25,115 During handling of the above exception, another exception occurred:
+2025-02-10T13:19:25,115 
+2025-02-10T13:19:25,115 Traceback (most recent call last):
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 106, in _run_wrapper
+2025-02-10T13:19:25,115     status = _inner_run()
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 97, in _inner_run
+2025-02-10T13:19:25,115     return self.run(options, args)
+2025-02-10T13:19:25,115            ~~~~~~~~^^^^^^^^^^^^^^^
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+2025-02-10T13:19:25,115     return func(self, options, args)
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\commands\install.py", line 350, in run
+2025-02-10T13:19:25,115     reqs = self.get_requirements(args, options, finder, session)
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\cli\req_command.py", line 255, in get_requirements
+2025-02-10T13:19:25,115     for parsed_req in parse_requirements(
+2025-02-10T13:19:25,115                       ~~~~~~~~~~~~~~~~~~^
+2025-02-10T13:19:25,115         filename, finder=finder, options=options, session=session
+2025-02-10T13:19:25,115         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-02-10T13:19:25,115     ):
+2025-02-10T13:19:25,115     ^
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 168, in parse_requirements
+2025-02-10T13:19:25,115     for parsed_line in parser.parse(filename, constraint):
+2025-02-10T13:19:25,115                        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 349, in parse
+2025-02-10T13:19:25,115     yield from self._parse_and_recurse(
+2025-02-10T13:19:25,115         filename, constraint, [{os.path.abspath(filename): None}]
+2025-02-10T13:19:25,115     )
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 359, in _parse_and_recurse
+2025-02-10T13:19:25,115     for line in self._parse_file(filename, constraint):
+2025-02-10T13:19:25,115                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 408, in _parse_file
+2025-02-10T13:19:25,115     _, content = get_file_content(filename, self._session)
+2025-02-10T13:19:25,115                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-02-10T13:19:25,115   File "C:\Users\USER\Documents\GitHub\smolagents\venv\Lib\site-packages\pip\_internal\req\req_file.py", line 590, in get_file_content
+2025-02-10T13:19:25,115     raise InstallationError(f"Could not open requirements file: {exc}")
+2025-02-10T13:19:25,115 pip._internal.exceptions.InstallationError: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+2025-02-10T13:19:25,129 Removed build tracker: 'C:\\Users\\USER\\AppData\\Local\\Temp\\pip-build-tracker-vsyokwen'
